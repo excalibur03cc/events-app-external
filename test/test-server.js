@@ -21,13 +21,16 @@ describe('GET /', function () {
 
     request(app)
       .get('/')
+
+
+      
       .expect('Content-Type', /html/)
       .expect(200)
       .end((err, res) => {
         if (err) {
           return done(err);
         }
-        chai.assert.isTrue(res.text.includes("<h1>Welcome to [TEAM NAME'S] application</h1>"));
+        chai.assert.isTrue(res.text.includes("<h1>Welcome to Leftover Gary Kong application v3</h1>"));
         return done();
       });
 
