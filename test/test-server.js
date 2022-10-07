@@ -30,7 +30,7 @@ describe('GET /', function () {
         if (err) {
           return done(err);
         }
-        chai.assert.isTrue(res.text.includes("<h1>blah blah</h1>"));
+        chai.assert.isTrue(res.text.includes("<h1>Events App Gary Kong</h1>"));
         return done();
       });
 
